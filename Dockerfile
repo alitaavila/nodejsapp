@@ -8,7 +8,6 @@
 # CMD npm start
 #RUN npm install // gives the error when executing this step
 #RUN npm install react-scripts@3.4.1 -g --silent
-
 # start app
 #CMD ["npm", "start"]
 
@@ -25,4 +24,5 @@ EXPOSE 3000
 
 COPY . .
 
-CMD [ "node", "server.js" ]
+CMD [ "node", "start" ]
+#CMD [ "node", "server.js" ]
