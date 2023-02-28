@@ -3,7 +3,7 @@ WORKDIR /nodejsapp
 #COPY package.json .
 #COPY . .
 ADD . /nodejsapp
-RUN npm install
+#RUN npm install
 EXPOSE 3000
 # CMD npm start
 #RUN npm install // gives the error when executing this step
