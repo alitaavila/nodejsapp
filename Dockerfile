@@ -13,5 +13,4 @@ EXPOSE 3000
 
 COPY . .
 
-#CMD [ "node", "start" ]
 CMD [ "node", "server.js" ]
