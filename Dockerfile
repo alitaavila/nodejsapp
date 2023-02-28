@@ -5,9 +5,9 @@ WORKDIR /nodejsapp
 
 ADD . /nodejsapp
 
-COPY ["package.json", "package-lock.json*", "./"]
+#COPY ["package.json", "package-lock.json*", "./"]
 
-COPY . .
+#COPY . .
 
 #RUN npm install --production
 RUN npm install
