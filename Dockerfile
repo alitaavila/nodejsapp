@@ -1,9 +1,9 @@
 FROM node
-WORKDIR /appnodejs
+WORKDIR /nodejsapp
 #COPY package.json .
 #COPY . .
-ADD . /appnodejs
-#RUN npm install
+ADD . /nodejsapp
+RUN npm install
 EXPOSE 3000
 # CMD npm start
 #RUN npm install // gives the error when executing this step
